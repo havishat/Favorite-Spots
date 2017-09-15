@@ -38,24 +38,24 @@
                                             <segue destination="eHV-xX-tvO" kind="presentation" id="ehe-AO-OiU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cg-2L-jif">
-                                        <rect key="frame" x="0.0" y="66.5" width="375" height="67"/>
-                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Landmarks">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="eHV-xX-tvO" kind="presentation" id="DRX-3w-qmq"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJx-xG-b7z">
-                                        <rect key="frame" x="0.0" y="133.5" width="375" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="66.5" width="375" height="67"/>
                                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Shopping">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="eHV-xX-tvO" kind="presentation" id="ggf-Zo-aXI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cg-2L-jif">
+                                        <rect key="frame" x="0.0" y="133.5" width="375" height="66.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Landmarks">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="eHV-xX-tvO" kind="presentation" id="DRX-3w-qmq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="137" y="150"/>
         </scene>
         <!--routeViewController-->
         <scene sceneID="Zxg-Na-6dg">
@@ -179,11 +179,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Unf-7i-0mU" id="s8t-6J-heT">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="308" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJ9-4t-87k">
-                                            <rect key="frame" x="112" y="0.0" width="118" height="29"/>
+                                            <rect key="frame" x="95" y="0.0" width="118" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -242,7 +242,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rfk-hX-0qA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="364"/>
+            <point key="canvasLocation" x="1060" y="497"/>
         </scene>
         <!--Add Item View Controller-->
         <scene sceneID="aEz-W8-KRw">
@@ -369,7 +369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FuJ-Hv-tEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4060" y="157.87106446776613"/>
+            <point key="canvasLocation" x="3838" y="158"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZrB-De-EjD">
@@ -387,7 +387,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgE-ZS-o48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="149.77511244377811"/>
+            <point key="canvasLocation" x="1060" y="-292"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7aI-io-cfu">
@@ -405,12 +405,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bts-py-C81" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3120.8000000000002" y="157.87106446776613"/>
+            <point key="canvasLocation" x="2071" y="496"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lOt-to-WOD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dJt-C5-d6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W4V-N6-gXg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q1C-C0-3Fe">
@@ -422,8 +421,9 @@
                         <segue destination="RYz-Np-Egj" kind="relationship" relationship="rootViewController" id="bOd-91-a2O"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJt-C5-d6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3056.8000000000002" y="-580.65967016491754"/>
+            <point key="canvasLocation" x="1938" y="-293"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
