@@ -21,6 +21,7 @@
 		441543741F6B06D50035E15C /* My_Favorite_PlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441543731F6B06D50035E15C /* My_Favorite_PlacesUITests.swift */; };
 		441543831F6B0C050035E15C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441543821F6B0C050035E15C /* CoreLocation.framework */; };
 		44ACAEC41F6B1FCC00735F86 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ACAEC31F6B1FCC00735F86 /* PlacesTableViewController.swift */; };
+		9FCD045E1F6C4CEF0028EDCC /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD045D1F6C4CEF0028EDCC /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		441543751F6B06D50035E15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		441543821F6B0C050035E15C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		44ACAEC31F6B1FCC00735F86 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		9FCD045D1F6C4CEF0028EDCC /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				441543501F6B06D50035E15C /* AppDelegate.swift */,
 				441543521F6B06D50035E15C /* ViewController.swift */,
 				441543541F6B06D50035E15C /* Main.storyboard */,
+				9FCD045D1F6C4CEF0028EDCC /* RoundedButton.swift */,
 				440787871F6B88DE001850FD /* routeViewController.swift */,
 				44ACAEC31F6B1FCC00735F86 /* PlacesTableViewController.swift */,
 				440787811F6B638D001850FD /* PlaceCell.swift */,
@@ -296,6 +299,7 @@
 				4407877E1F6B49B0001850FD /* AddItemViewController.swift in Sources */,
 				440787881F6B88DE001850FD /* routeViewController.swift in Sources */,
 				440787821F6B638D001850FD /* PlaceCell.swift in Sources */,
+				9FCD045E1F6C4CEF0028EDCC /* RoundedButton.swift in Sources */,
 				441543531F6B06D50035E15C /* ViewController.swift in Sources */,
 				44ACAEC41F6B1FCC00735F86 /* PlacesTableViewController.swift in Sources */,
 				441543511F6B06D50035E15C /* AppDelegate.swift in Sources */,

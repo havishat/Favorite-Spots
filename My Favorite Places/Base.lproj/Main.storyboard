@@ -64,7 +64,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Spots" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C3-g1-dYD">
-                                <rect key="frame" x="16" y="28" width="343" height="60"/>
+                                <rect key="frame" x="16" y="28" width="343" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="dTb-c5-qDJ"/>
                                 </constraints>
@@ -73,7 +73,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FVM-M5-pzl">
-                                <rect key="frame" x="0.0" y="96" width="375" height="371"/>
+                                <rect key="frame" x="0.0" y="71" width="375" height="396"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -198,7 +198,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJ9-4t-87k">
-                                            <rect key="frame" x="95" y="0.0" width="118" height="29"/>
+                                            <rect key="frame" x="95.5" y="0.0" width="118" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -293,8 +293,9 @@
                                 </constraints>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eub-P9-84d">
-                                <rect key="frame" x="136" y="597" width="103" height="30"/>
+                                <rect key="frame" x="136" y="596" width="103" height="41"/>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -364,7 +365,7 @@
                             <constraint firstItem="zTn-Fn-uAB" firstAttribute="leading" secondItem="WgN-Td-lgo" secondAttribute="leadingMargin" id="g8y-eU-AMS"/>
                             <constraint firstItem="zTn-Fn-uAB" firstAttribute="top" secondItem="7AS-pP-9I6" secondAttribute="bottom" constant="15" id="pK9-ZO-1QS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7AS-pP-9I6" secondAttribute="trailing" id="pZU-Uq-8l5"/>
-                            <constraint firstItem="hd4-8R-zNN" firstAttribute="top" secondItem="Eub-P9-84d" secondAttribute="bottom" constant="40" id="sr5-CJ-BYT"/>
+                            <constraint firstItem="hd4-8R-zNN" firstAttribute="top" secondItem="Eub-P9-84d" secondAttribute="bottom" constant="30" id="sr5-CJ-BYT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sAc-0G-k5E">
