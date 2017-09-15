@@ -10,8 +10,14 @@ import UIKit
 import CoreData
 import CoreLocation
 
+protocol routeViewDelegate: class {
+    func viewcancel()
+    func getrow() -> Place?
+}
+
 class PlacesTableViewController: UITableViewController {
     
+    var place: Place?
     var places = [Place]()
     let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     weak var delegate: MapDelegate?
@@ -71,6 +77,7 @@ class PlacesTableViewController: UITableViewController {
         return cell
     }
     
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         let object = places[indexPath.row]
         moc.delete(object)
@@ -79,25 +86,58 @@ class PlacesTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "displayPlace", sender: places[indexPath.row])
+    }
+    
+    override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        performSegue(withIdentifier: "editPlace", sender: indexPath)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let navController = segue.destination as! UINavigationController
-        let controller = navController.topViewController as! AddItemViewController
-        controller.delegate = self
+        if segue.identifier == "displayPlace" {
+            let navController = segue.destination as! UINavigationController
+            let controller = navController.topViewController as! routeViewController
+            if let sender = sender as? Place {
+                print("this working")
+                place = sender
+            }
+            controller.delegate = self
+            
+        } else {
+            let navController = segue.destination as! UINavigationController
+            let controller = navController.topViewController as! AddItemViewController
+            controller.delegate = self
+            if let indexPath = sender as? IndexPath {
+                controller.place = places[indexPath.row]
+                controller.indexPath = indexPath
+            }
+        }
     }
 }
 
 extension PlacesTableViewController: placeDelegate {
     
-    func save(name: String, desc: String, cost: Int, hearts: Int, lat: Double, lon: Double) {
-        let place = NSEntityDescription.insertNewObject(forEntityName: "Place", into: moc) as! Place
-        place.name = name
-        place.desc = desc
-        place.cost = Double(cost)
-        place.hearts = Double(hearts)
-        place.lat = lat
-        place.lon = lon
+    func save(name: String, desc: String, cost: Int, hearts: Int, lat: Double, lon: Double, indexPath: IndexPath?) {
+        if let indexPath = indexPath {
+            let place = places[indexPath.row]
+            place.name = name
+            place.desc = desc
+            place.cost = Double(cost)
+            place.hearts = Double(hearts)
+            place.lat = lat
+            place.lon = lon
+        } else {
+            let place = NSEntityDescription.insertNewObject(forEntityName: "Place", into: moc) as! Place
+            place.name = name
+            place.desc = desc
+            place.cost = Double(cost)
+            place.hearts = Double(hearts)
+            place.lat = lat
+            place.lon = lon
+            places.append(place)
+        }
         save()
-        places.append(place)
         tableView.reloadData()
         dismiss(animated: true, completion: nil)
     }
@@ -106,3 +146,13 @@ extension PlacesTableViewController: placeDelegate {
         dismiss(animated: true, completion: nil)
     }
 }
+
+extension PlacesTableViewController: routeViewDelegate {
+    func viewcancel(){
+        dismiss(animated: true, completion: nil)
+    }
+    func getrow() -> Place?{
+        return place
+    }
+}
+

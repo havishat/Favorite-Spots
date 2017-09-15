@@ -10,6 +10,7 @@
 		4407877E1F6B49B0001850FD /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407877D1F6B49B0001850FD /* AddItemViewController.swift */; };
 		440787801F6B4A4C001850FD /* PlaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407877F1F6B4A4C001850FD /* PlaceDelegate.swift */; };
 		440787821F6B638D001850FD /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440787811F6B638D001850FD /* PlaceCell.swift */; };
+		440787881F6B88DE001850FD /* routeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440787871F6B88DE001850FD /* routeViewController.swift */; };
 		441543511F6B06D50035E15C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441543501F6B06D50035E15C /* AppDelegate.swift */; };
 		441543531F6B06D50035E15C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441543521F6B06D50035E15C /* ViewController.swift */; };
 		441543561F6B06D50035E15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441543541F6B06D50035E15C /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		4407877D1F6B49B0001850FD /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		4407877F1F6B4A4C001850FD /* PlaceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDelegate.swift; sourceTree = "<group>"; };
 		440787811F6B638D001850FD /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		440787871F6B88DE001850FD /* routeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = routeViewController.swift; sourceTree = "<group>"; };
 		4415434D1F6B06D50035E15C /* My Favorite Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Favorite Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		441543501F6B06D50035E15C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		441543521F6B06D50035E15C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		4415434F1F6B06D50035E15C /* My Favorite Places */ = {
 			isa = PBXGroup;
 			children = (
+				440787871F6B88DE001850FD /* routeViewController.swift */,
 				441543501F6B06D50035E15C /* AppDelegate.swift */,
 				441543521F6B06D50035E15C /* ViewController.swift */,
 				441543541F6B06D50035E15C /* Main.storyboard */,
@@ -290,6 +293,7 @@
 			files = (
 				440787801F6B4A4C001850FD /* PlaceDelegate.swift in Sources */,
 				4407877E1F6B49B0001850FD /* AddItemViewController.swift in Sources */,
+				440787881F6B88DE001850FD /* routeViewController.swift in Sources */,
 				440787821F6B638D001850FD /* PlaceCell.swift in Sources */,
 				441543531F6B06D50035E15C /* ViewController.swift in Sources */,
 				44ACAEC41F6B1FCC00735F86 /* PlacesTableViewController.swift in Sources */,

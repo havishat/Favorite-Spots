@@ -16,6 +16,8 @@ class AddItemViewController: UIViewController {
     let manager = CLLocationManager()
     var myLocation = CLLocationCoordinate2D()
     var region = MKCoordinateRegion()
+    var place: Place?
+    var indexPath: IndexPath?
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var name: UITextField!
@@ -83,7 +85,18 @@ class AddItemViewController: UIViewController {
         delegate?.cancel()
     }
     @IBAction func saveButtonPressed(_ sender: UIButton) {
-        delegate?.save(name: name.text!, desc: desc.text!, cost: costButton.tag, hearts: heartButton.tag, lat: mapView.centerCoordinate.latitude, lon: mapView.centerCoordinate.longitude)
+        delegate?.save(name: name.text!, desc: desc.text!, cost: costButton.tag, hearts: heartButton.tag, lat: mapView.centerCoordinate.latitude, lon: mapView.centerCoordinate.longitude, indexPath: indexPath)
+    }
+    
+    func checkPlace(){
+        if let currentPlace = place {
+            let location = CLLocationCoordinate2DMake(currentPlace.lat, currentPlace.lon)
+            mapView.setCenter(location, animated: false)
+            name.text = currentPlace.name
+            desc.text = currentPlace.desc
+            costButton.tag = Int(currentPlace.cost)
+            heartButton.tag = Int(currentPlace.hearts)
+        }
     }
     
     override func viewDidLoad() {
@@ -113,6 +126,7 @@ extension AddItemViewController: CLLocationManagerDelegate {
         mapView.showsUserLocation = true
         mapView.setRegion(region, animated: false)
         self.manager.stopUpdatingLocation()
+        checkPlace()
     }
 }
 

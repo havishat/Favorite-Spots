@@ -10,6 +10,6 @@ import UIKit
 import CoreLocation
 
 protocol placeDelegate: class {
-    func save(name: String, desc: String, cost: Int, hearts: Int, lat: Double, lon: Double)
+    func save(name: String, desc: String, cost: Int, hearts: Int, lat: Double, lon: Double, indexPath: IndexPath?)
     func cancel()
 }
