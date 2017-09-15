@@ -223,6 +223,7 @@
 				TargetAttributes = {
 					4415434C1F6B06D50035E15C = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JG566Q28N9;
 						ProvisioningStyle = Automatic;
 					};
 					441543631F6B06D50035E15C = {
@@ -453,7 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JG566Q28N9;
 				INFOPLIST_FILE = "My Favorite Places/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lormanlau.My-Favorite-Places";
@@ -468,7 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JG566Q28N9;
 				INFOPLIST_FILE = "My Favorite Places/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lormanlau.My-Favorite-Places";

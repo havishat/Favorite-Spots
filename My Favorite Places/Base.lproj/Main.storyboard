@@ -22,15 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FVM-M5-pzl">
-                                <rect key="frame" x="0.0" y="28" width="375" height="439"/>
-                            </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2uY-J4-4pf">
                                 <rect key="frame" x="0.0" y="467" width="375" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se8-MC-oKw">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
-                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.53333333329999999" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Food">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -40,7 +38,8 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJx-xG-b7z">
                                         <rect key="frame" x="0.0" y="66.5" width="375" height="67"/>
-                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.28627450980000002" green="0.1529411765" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Shopping">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -50,7 +49,8 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cg-2L-jif">
                                         <rect key="frame" x="0.0" y="133.5" width="375" height="66.5"/>
-                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.8862745098" green="0.30588235289999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Landmarks">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -63,16 +63,32 @@
                                     <constraint firstAttribute="height" constant="200" id="B35-ph-Zu3"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Spots" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C3-g1-dYD">
+                                <rect key="frame" x="16" y="28" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dTb-c5-qDJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.2666666667" green="0.51764705879999995" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FVM-M5-pzl">
+                                <rect key="frame" x="0.0" y="96" width="375" height="371"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2uY-J4-4pf" secondAttribute="bottom" id="2uq-kh-8Tg"/>
                             <constraint firstAttribute="trailing" secondItem="2uY-J4-4pf" secondAttribute="trailing" id="NbZ-4M-c2M"/>
                             <constraint firstItem="2uY-J4-4pf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PC6-Zn-8Ma"/>
+                            <constraint firstItem="1C3-g1-dYD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UVa-Wf-fSI"/>
+                            <constraint firstItem="1C3-g1-dYD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bab-Gg-mlO"/>
                             <constraint firstAttribute="trailing" secondItem="FVM-M5-pzl" secondAttribute="trailing" id="bfq-mZ-onb"/>
                             <constraint firstItem="FVM-M5-pzl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dDg-Dp-CFr"/>
                             <constraint firstItem="FVM-M5-pzl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hNE-dj-1V3"/>
                             <constraint firstItem="2uY-J4-4pf" firstAttribute="top" secondItem="FVM-M5-pzl" secondAttribute="bottom" id="hwP-Pb-NfK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1C3-g1-dYD" secondAttribute="trailing" id="keK-Wd-HN9"/>
+                            <constraint firstItem="FVM-M5-pzl" firstAttribute="top" secondItem="1C3-g1-dYD" secondAttribute="bottom" constant="8" id="pdU-yc-u4M"/>
                         </constraints>
                     </view>
                     <connections>
@@ -179,11 +195,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Unf-7i-0mU" id="s8t-6J-heT">
-                                    <rect key="frame" x="0.0" y="0.0" width="308" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="308" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJ9-4t-87k">
-                                            <rect key="frame" x="95" y="0.0" width="118" height="29"/>
+                                            <rect key="frame" x="95.5" y="0.0" width="118" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
