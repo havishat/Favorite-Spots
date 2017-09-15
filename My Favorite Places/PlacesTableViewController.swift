@@ -12,7 +12,6 @@ import CoreLocation
 
 protocol routeViewDelegate: class {
     func viewcancel()
-    func getrow() -> Place?
 }
 
 class PlacesTableViewController: UITableViewController {
@@ -99,8 +98,7 @@ class PlacesTableViewController: UITableViewController {
             let navController = segue.destination as! UINavigationController
             let controller = navController.topViewController as! routeViewController
             if let sender = sender as? Place {
-                print("this working")
-                place = sender
+                controller.place = sender
             }
             controller.delegate = self
             
@@ -150,9 +148,6 @@ extension PlacesTableViewController: placeDelegate {
 extension PlacesTableViewController: routeViewDelegate {
     func viewcancel(){
         dismiss(animated: true, completion: nil)
-    }
-    func getrow() -> Place?{
-        return place
     }
 }
 

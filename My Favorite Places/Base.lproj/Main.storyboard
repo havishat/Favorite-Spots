@@ -230,7 +230,6 @@
                                     <outlet property="costLabel" destination="g9l-oe-Bwa" id="c24-p7-J1F"/>
                                     <outlet property="heartLabel" destination="kD4-Vs-lhT" id="guT-cK-W8V"/>
                                     <outlet property="nameLabel" destination="WJ9-4t-87k" id="T9A-xs-R0E"/>
-                                    <segue destination="W4V-N6-gXg" kind="presentation" identifier="displayPlace" id="EJP-mn-oU0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -254,6 +253,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="VVP-OY-kPu" kind="presentation" identifier="editPlace" id="ckA-4i-4dU"/>
+                        <segue destination="W4V-N6-gXg" kind="presentation" identifier="displayPlace" id="tjg-9S-lcT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rfk-hX-0qA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -443,7 +443,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ckA-4i-4dU"/>
+        <segue reference="9Zt-m0-ckS"/>
         <segue reference="ehe-AO-OiU"/>
     </inferredMetricsTieBreakers>
 </document>
