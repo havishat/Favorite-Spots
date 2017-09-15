@@ -113,10 +113,10 @@
 		4415434F1F6B06D50035E15C /* My Favorite Places */ = {
 			isa = PBXGroup;
 			children = (
-				440787871F6B88DE001850FD /* routeViewController.swift */,
 				441543501F6B06D50035E15C /* AppDelegate.swift */,
 				441543521F6B06D50035E15C /* ViewController.swift */,
 				441543541F6B06D50035E15C /* Main.storyboard */,
+				440787871F6B88DE001850FD /* routeViewController.swift */,
 				44ACAEC31F6B1FCC00735F86 /* PlacesTableViewController.swift */,
 				440787811F6B638D001850FD /* PlaceCell.swift */,
 				4407877D1F6B49B0001850FD /* AddItemViewController.swift */,
