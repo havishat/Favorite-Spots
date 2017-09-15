@@ -93,6 +93,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="FVM-M5-pzl" id="psn-6m-bw0"/>
+                        <segue destination="W4V-N6-gXg" kind="presentation" identifier="displayPlace" id="d0Z-Qy-f93"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -443,5 +444,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="9Zt-m0-ckS"/>
         <segue reference="ehe-AO-OiU"/>
+        <segue reference="d0Z-Qy-f93"/>
     </inferredMetricsTieBreakers>
 </document>

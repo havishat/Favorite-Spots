@@ -53,9 +53,16 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let navController = segue.destination as! UINavigationController
-        let controller = navController.topViewController as! PlacesTableViewController
-        controller.delegate = self
+        if segue.identifier == "displayPlace" {
+            let navController = segue.destination as! UINavigationController
+            let controller = navController.topViewController as! routeViewController
+            controller.delegate = self
+            controller.place = sender as! Place
+        } else {
+            let navController = segue.destination as! UINavigationController
+            let controller = navController.topViewController as! PlacesTableViewController
+            controller.delegate = self
+        }
     }
 }
 
@@ -79,7 +86,6 @@ extension ViewController: CLLocationManagerDelegate {
 
 
 extension ViewController: MKMapViewDelegate {
-    
     func addAllAnnotations() {
         for place in places {
             let pin = MKPointAnnotation()
@@ -89,6 +95,15 @@ extension ViewController: MKMapViewDelegate {
         }
     }
     
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let cords = view.annotation?.coordinate {
+            for place in places {
+                if cords.latitude == place.lat && cords.longitude == place.lon {
+                    performSegue(withIdentifier: "displayPlace", sender: place)
+                }
+            }
+        }
+    }
 }
 
 extension ViewController: MapDelegate {
@@ -96,6 +111,12 @@ extension ViewController: MapDelegate {
         fetchAllData()
         mapView.removeAnnotations(mapView.annotations)
         addAllAnnotations()
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+extension ViewController: routeViewDelegate {
+    func viewcancel() {
         dismiss(animated: true, completion: nil)
     }
 }
