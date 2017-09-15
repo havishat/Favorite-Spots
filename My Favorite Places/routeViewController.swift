@@ -69,12 +69,12 @@ class routeViewController: UIViewController {
         if let place = place {
             nameLabel.text = place.name
             descLabel.text = place.desc
-            var cost = ""
+            var cost = "Cost Level: "
             for _ in 0..<Int(place.cost) {
                 cost += "$"
             }
             costLabel.text = cost
-            var heart = ""
+            var heart = "Fav Level: "
             for _ in 0..<Int(place.hearts) {
                 heart += "<3"
             }

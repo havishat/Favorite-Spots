@@ -67,12 +67,12 @@ class PlacesTableViewController: UITableViewController {
         for _ in 0..<Int(places[indexPath.row].cost) {
             cost += "$"
         }
-        cell.costLabel.text = "Cost: \(cost)"
+        cell.costLabel.text = "Cost Level: \(cost)"
         var hearts = ""
         for _ in 0..<Int(places[indexPath.row].hearts) {
             hearts += "<3"
         }
-        cell.heartLabel.text = "Favorite: \(hearts)"
+        cell.heartLabel.text = "Fav Level: \(hearts)"
         return cell
     }
     
